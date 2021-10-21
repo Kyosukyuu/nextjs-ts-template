@@ -6,7 +6,15 @@ import { DefaultSeo } from "next-seo";
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider theme={theme}>
-      <DefaultSeo defaultTitle="Create Next App" />
+      <DefaultSeo
+        defaultTitle="Create Next App"
+        additionalLinkTags={[
+          {
+            rel: "manifest",
+            href: "/manifest.json",
+          },
+        ]}
+      />
       <Component {...pageProps} />;
     </ChakraProvider>
   );
