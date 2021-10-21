@@ -1,0 +1,10 @@
+{
+  "name": "Next PWA demo",
+  "short_name": "Next PWA",
+  "icons": [],
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
