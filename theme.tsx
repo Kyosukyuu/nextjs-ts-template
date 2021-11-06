@@ -1,6 +1,11 @@
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 
-const configs = {
+const configs: ThemeConfig = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+};
+
+const globalOverrides = {
   styles: {
     global: {
       "html, body": { padding: 0, margin: 0 },
@@ -8,6 +13,6 @@ const configs = {
   },
 };
 
-const theme = extendTheme(configs);
+const theme = extendTheme({ ...configs, ...globalOverrides });
 
 export default theme;

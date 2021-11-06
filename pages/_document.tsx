@@ -15,16 +15,7 @@ class CustomDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
-          {/* <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="/favicon.ico"
-          />
-          <link rel="apple-touch-icon" href="/favicon.ico" />
-          <link rel="manifest" href="/manifest.json" /> */}
-        </Head>
+        <Head />
         <body>
           <Main />
           <NextScript />
